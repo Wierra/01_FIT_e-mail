@@ -2,7 +2,10 @@ const jmeno = prompt("Vítejte v IS Fakulty Informačních technilogií ČVUT. P
 const prijmeni = prompt("Vyplň své příjmení:").toLowerCase().trim()
 const domena = "fit.cvut.cz"
 
-document.body.innerHTML += "<p>Vyplněné jméno: " + jmeno + " " + prijmeni + " " + "</p>"
+
+
+console.log(jmeno, prijmeni)
+
 document.body.innerHTML += `<p>Tvá e-mailová adresa pro přihlašování do našeho IS: <h1>${jmeno.slice(0, 3)}${prijmeni.slice(0, 5)}` + `@` + domena + `</h1></p>`
 
 //trim = žádné bílé znaky na začátku ani na konci
