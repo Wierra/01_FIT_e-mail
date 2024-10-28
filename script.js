@@ -5,7 +5,6 @@ const domena = "fit.cvut.cz"
 
 
 console.log(jmeno, prijmeni)
-
 document.body.innerHTML += `<p>Tvá e-mailová adresa pro přihlašování do našeho IS: <h1>${jmeno.slice(0, 3)}${prijmeni.slice(0, 5)}` + `@` + domena + `</h1></p>`
 
 //trim = žádné bílé znaky na začátku ani na konci
