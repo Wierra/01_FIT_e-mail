@@ -1,15 +1,9 @@
-const jmeno = prompt(trim("Vítejte v IS Fakulty Informačních technilogií ČVUT. Pro pokračování, vyplň své křestní jméno:")).toLowerCase()
-const prijmeni = prompt(trim("Vyplň své příjmení:")).toLowerCase().
+const jmeno = prompt("Vítejte v IS Fakulty Informačních technilogií ČVUT. Pro pokračování, vyplň své křestní jméno:").toLowerCase().trim()
+const prijmeni = prompt("Vyplň své příjmení:").toLowerCase().trim()
+const domena = "fit.cvut.cz"
 
-document.body.innerHTML += `<p>Počet znaků: ${title.length}`
-document.body.innerHTML += `<p>Název filmu velkými písmeny: ${title.toUpperCase()}</p>`
-document.body.innerHTML += `<p>Prvních 5 znaků: ${title.slice(0, 5)}</p>`
+document.body.innerHTML += `<p>Vyplněné jméno: " + jmeno + " " + prijmeni + " " + "</p>`
+document.body.innerHTML += `<p>Vytvořená e-mailová adresa: ${jmeno.slice(0, 3)}${prijmeni.slice(0, 5)}` + `@` + domena + `</p>`
 
-
-const jmenoTriZnaky = jmeno.length + 3
-const prijmeniPetZnaku = prijmeni.length + 5
-
-
-document.body.innerHTML += `<p>Posledních 5 znaků: ${title.slice(pozicePatehoZnakuOdKonce, pozicePoslednihoZnaku + 1)}</p>`
-
-trim
+//trim = žádné bílé znaky na začátku ani na konci
+//
